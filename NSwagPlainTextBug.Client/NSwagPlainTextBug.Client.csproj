@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.13.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <OpenApiProjectReference Include="..\NSwagPlainTextBug\NSwagPlainTextBug.csproj" />
+    <None Include="$(BaseIntermediateOutputPath)\NSwagPlainTextBugClient.cs" Link="%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
