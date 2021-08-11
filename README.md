@@ -9,7 +9,7 @@ To reproduce, simply run the test with `dotnet test` or Visual Studio.
 If you debug the test in Visual Studio, you can see the following log line in
 the debug output window, showing the client is indeed asking for a `text/plain`
 response:
-> NSwagPlainTextBug.Controllers.HelloWorldController: Information: Received request with Accept: text/plain
+> NSwagPlainTextBug.Controllers.HelloWorldController: Information: Request with Accept: text/plain
 
 
 Test log
